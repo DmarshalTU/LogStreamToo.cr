@@ -1,9 +1,3 @@
----
-runme:
-  id: 01HMAF9HNW995KQTNF6WBNT06R
-  version: v2.2
----
-
 # LogStreamTool
 
 LogStreamTool is a Crystal application for streaming and monitoring logs from Kubernetes pods. It allows you to easily stream logs from a specific pod to your favorite text editor.
@@ -24,14 +18,20 @@ LogStreamTool is a Crystal application for streaming and monitoring logs from Ku
 
 ## Installation
 
+download from release pre-built and run:
+
+```shell
+# chmod +x if need it
+./logstream
+
 ### Prerequisites
 
 Make sure you have Kubernetes CLI (`kubectl`) installed on your system.
 
 ### Build the Application
 
-```shell {"id":"01HMAFJ0Y6S9MV4J6BVS6Q6FP8"}
-git clone https://github.com/yourusername/logstream-tool.git
+```shell
+git clone https://github.com/DmarshalTU/LogStreamToo.cr.git
 
 cd logstream-tool
 
@@ -40,6 +40,7 @@ shards build --release
 
 ## Usage
 
+```shell
 ./logstream --namespace mynamespace --pod-name mypod --editor vim
 
 ### Options
@@ -47,6 +48,7 @@ shards build --release
 --namespace: Specify the Kubernetes namespace (default: default).
 --pod-name: Specify the pod name (default: nginx).
 --editor: Choose your text editor (vim, neovim, code, etc.).
+```
 
 ## Development
 
