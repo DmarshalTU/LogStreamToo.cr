@@ -1,0 +1,13 @@
+name: logstreamtool
+version: 0.1.0
+
+authors:
+  - Denis Tu <dmarshaltu@gmail.com>
+
+targets:
+  logstreamtool:
+    main: src/logstreamtool.cr
+
+crystal: '>= 1.11.1'
+
+license: MIT
